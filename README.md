@@ -26,6 +26,8 @@ Installation
 
 To install the Trendifyr Chrome extension:
 
+https://github.com/user-attachments/assets/cad959ba-4a0e-4255-a966-2ec1514f7990
+
 Go to the Chrome Web Store.
 Search for Trendifyr or click here.
 Click on Add to Chrome and follow the prompts.
