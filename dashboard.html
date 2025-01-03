@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trendifyr Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="chart.js"></script>
+</head>
+<body class="dark-theme">
+    <div class="dashboard-container">
+        <header>
+            <h1>Trendifyr</h1>
+            <p class="subtitle">Visual Content Analysis</p>
+        </header>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Total Content <i class="fas fa-info-circle info-icon" title="Total number of images and videos detected across the website"></i></h3>
+                <div class="metric-value" id="totalContent">0</div>
+                <div class="metric-trend">Images and videos found</div>
+            </div>
+            <div class="metric-card">
+                <h3>Personal Content <i class="fas fa-info-circle info-icon" title="Content identified as personal uploads, profile pictures, and user-generated media"></i></h3>
+                <div class="metric-value" id="personalContent">0</div>
+                <div class="metric-trend">Profile pictures & uploads</div>
+            </div>
+            <div class="metric-card">
+                <h3>Small Graphics <i class="fas fa-info-circle info-icon" title="Small visual elements like buttons, icons, and logos used throughout the site"></i></h3>
+                <div class="metric-value" id="smallGraphics">0</div>
+                <div class="metric-trend">Buttons & logos</div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="chart-card">
+                <h3>Content Types <i class="fas fa-info-circle info-icon" title="Distribution of different types of content found on the website"></i></h3>
+                <div id="mediumChart" class="chart-container"></div>
+            </div>
+            
+            <div class="chart-card">
+                <h3>Video Shapes <i class="fas fa-info-circle info-icon" title="Analysis of video aspect ratios and formats used across the site"></i></h3>
+                <div id="videoFormatChart" class="chart-container"></div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Button & Logo Types <i class="fas fa-info-circle info-icon" title="Categorization of buttons, logos, and icons by their usage and style"></i></h3>
+                <div id="iconChart" class="chart-container"></div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Personal Content Types <i class="fas fa-info-circle info-icon" title="Breakdown of user-generated and personal content categories"></i></h3>
+                <div id="personalContentChart" class="chart-container"></div>
+            </div>
+
+            <div class="chart-card full-width">
+                <h3>Trend Analysis <i class="fas fa-info-circle info-icon" title="Visual content trends and patterns identified over time"></i></h3>
+                <div id="trendsData" class="trends-container"></div>
+            </div>
+
+            <div class="chart-card full-width">
+                <h3>Content Context Analysis <i class="fas fa-info-circle info-icon" title="Deep analysis of how visual content is used in different contexts across the site"></i></h3>
+                <div id="contextAnalysis" class="context-container"></div>
+            </div>
+
+            <div class="chart-card full-width">
+                <h3>AI Recommendations <i class="fas fa-info-circle info-icon" title="AI-powered suggestions for improving visual content strategy"></i></h3>
+                <div id="aiRecommendations" class="recommendations-container"></div>
+            </div>
+
+            <div class="chart-card full-width">
+                <h3>Share Your Insights <i class="fas fa-info-circle info-icon" title="Share your visual content analysis findings on social media platforms"></i></h3>
+                <div id="shareSection" class="share-container">
+                    <div class="share-buttons">
+                        <button class="share-btn twitter">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </button>
+                        <button class="share-btn linkedin">
+                            <i class="fab fa-linkedin-in"></i> LinkedIn
+                        </button>
+                        <button class="share-btn instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </button>
+                        <button class="share-btn pinterest">
+                            <i class="fab fa-pinterest-p"></i> Pinterest
+                        </button>
+                        <button class="share-btn reddit">
+                            <i class="fab fa-reddit-alien"></i> Reddit
+                        </button>
+                    </div>
+                    <div id="shareMessage" class="share-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 

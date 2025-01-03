@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trendifyr Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="dashboard-container">
+        <header>
+            <h1>Trendifyr Settings</h1>
+        </header>
+        
+        <div class="settings-grid">
+            <div class="settings-card">
+                <h3>Analysis Settings</h3>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="analyzeColors" checked>
+                        Analyze Color Trends
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="analyzeObjects">
+                        Detect Objects (Beta)
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="analyzeStyles">
+                        Analyze Design Styles
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h3>Privacy Settings</h3>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="anonymousData" checked>
+                        Anonymous Data Collection
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="number" id="dataRetention" min="1" max="90" value="30">
+                        Days to Keep Data
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h3>Performance Settings</h3>
+                <div class="setting-item">
+                    <label>
+                        <input type="number" id="maxImagesPerPage" min="10" max="1000" value="100">
+                        Max Images Per Page
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label>
+                        <input type="checkbox" id="backgroundProcessing" checked>
+                        Process in Background
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button id="saveSettings" class="dashboard-button">Save Settings</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html> 
